@@ -105,7 +105,7 @@ public final class Language {
      * Pascal regex for language pattern constructions
      */
     public static final String REGEX_LETTER     = "[a-zA-Z]";
-    public static final String REGEX_DIGIT      = "[0-9]";
+    public static final String REGEX_DIGIT      = "\\d";
     public static final String REGEX_TRUE       = "true";
     public static final String REGEX_FALSE      = "false";
     public static final String REGEX_NEWLINE    = "\n";
@@ -175,8 +175,8 @@ public final class Language {
     /**
      * Pascal regex for literal datatypes
      */
-    public static final String REGEX_LIT_INT    = REGEX_DIGIT + "+";
-    public static final String REGEX_LIT_REAL   = REGEX_DIGIT + "+\\." +REGEX_DIGIT+"+";
+    public static final String REGEX_LIT_INT    = "(\\+|-)?"+REGEX_DIGIT + "+";
+    public static final String REGEX_LIT_REAL   = "(\\+|-)?"+REGEX_DIGIT + "+\\." +REGEX_DIGIT+"+";
     public static final String REGEX_LIT_BOOL   = REGEX_TRUE + "|" + REGEX_FALSE;
     public static final String REGEX_LIT_CHAR   = "\'.\'";
     public static final String REGEX_LIT_STRING = REGEX_SINGLEQT + REGEX_ANYTHING + REGEX_SINGLEQT;
@@ -228,6 +228,7 @@ public final class Language {
     public static final int ST_SINGLEQT                    = 32;
     public static final int ST_SINGLEQT_ACCEPTALL          = 33;
     public static final int ST_SINGLEQT_ACCEPTALL_SINGLEQT = 34;
+    public static final int ST_ERROR = 35;
 
     /**
      * empty constructor for reading

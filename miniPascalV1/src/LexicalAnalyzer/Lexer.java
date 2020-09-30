@@ -1,4 +1,7 @@
 package LexicalAnalyzer;
+
+import org.xml.sax.ext.LexicalHandler;
+
 /**
  * Lexer
  *
@@ -79,6 +82,11 @@ public class Lexer {
                 /**
                  * start state
                  */
+                case -1:
+                    throw new Exception("Could not compile.\n"+
+                            "Unrecognized token: "+currentChar+
+                            "\nFound on line: "+lineCounter);
+
                 case LexicalAnalyzer.Language.ST_START :
                     /**
                      * Set the lookAheadCounter = to the programCounter so we
@@ -134,7 +142,7 @@ public class Lexer {
                         state = LexicalAnalyzer.Language.ST_RSQBRACKET;
                     } else if (currentChar.matches(LexicalAnalyzer.Language.REGEX_SINGLEQT)) {
                         state = LexicalAnalyzer.Language.ST_SINGLEQT;
-                    } else if (currentChar.matches(LexicalAnalyzer.Language.REGEX_WHITESPACE)) {
+                    }else if (currentChar.matches(LexicalAnalyzer.Language.REGEX_WHITESPACE)) {
                         //ignore
                     } else {
                         throw new Exception("Could not compile.\n"+
@@ -599,11 +607,21 @@ public class Lexer {
                      * digit
                      */
                 case LexicalAnalyzer.Language.ST_DIGIT :
+                    int temp = lookAheadCounter;
+                    String tempString = currentLexeme;
+                    temp ++;
+                    tempString += Character.toString(programText.charAt(temp));
+                    if (tempString.matches(LexicalAnalyzer.Language.REGEX_LETTER)) {
+                        detectedToken = Language.TOK_LP_ERROR;
+                        currentChar = tempString;
+                        state = -1;
 
-                    detectedToken = LexicalAnalyzer.Language.TOK_LIT_INT;
-                    currentLexeme += currentChar;
-                    detectedLexeme = currentLexeme;
-                    state = LexicalAnalyzer.Language.ST_INTEGER;
+                    } else {
+                        detectedToken = LexicalAnalyzer.Language.TOK_LIT_INT;
+                        currentLexeme += currentChar;
+                        detectedLexeme = currentLexeme;
+                        state = LexicalAnalyzer.Language.ST_INTEGER;
+                    }
                     break;
 
                 /**
@@ -612,13 +630,20 @@ public class Lexer {
                 case LexicalAnalyzer.Language.ST_INTEGER :
                     // System.out.println("Entering ST_INTEGER");
                     lookAheadCounter++;
+
                     // System.out.println("Lookahead counter incremented");
                     currentLexeme += Character.toString(programText.charAt(lookAheadCounter));
+                    String bug2 = Character.toString(programText.charAt(lookAheadCounter));
+                    if (bug2.matches(Language.REGEX_LETTER)) {
 
+                        currentChar = bug2;
+                        detectedToken = Language.TOK_LP_ERROR;
+                        state = -1;
+                        break;
+                    }
                     if (currentLexeme.matches(LexicalAnalyzer.Language.REGEX_LIT_INT)) {
                         detectedLexeme = currentLexeme;
 
-                        break;
                     } else {
 
                         String checkForDecimal = Character.toString(programText.charAt(lookAheadCounter));
@@ -632,6 +657,7 @@ public class Lexer {
                                 decimalFound = true;
                                 state = LexicalAnalyzer.Language.ST_REAL;
                                 break;
+
                             default:
                                 break;
                         }
@@ -640,12 +666,13 @@ public class Lexer {
                             break;
                         }
 
+
                         // System.out.println("State Reset by ST_INTEGER - found an INTEGER");
                         programCounter = lookAheadCounter;
                         resetStateAndStopSearching();
-                        break;
                     }
-                    /**
+                    break;
+                /**
                      * real state
                      */
                 case LexicalAnalyzer.Language.ST_REAL :
@@ -654,17 +681,23 @@ public class Lexer {
                     // System.out.println("Lookahead counter incremented");
                     currentLexeme += Character.toString(programText.charAt(lookAheadCounter));
                     // System.out.println("FROM REST_REAL: "+currentLexeme);
-                    if (currentLexeme.matches(LexicalAnalyzer.Language.REGEX_LIT_REAL)) {
-                        detectedToken = LexicalAnalyzer.Language.TOK_LIT_REAL;
+                    String bug = Character.toString(programText.charAt(lookAheadCounter));
+                    if (bug.matches(Language.REGEX_LETTER)){
+                        detectedToken = Language.TOK_LP_ERROR;
+                        currentChar = Character.toString(programText.charAt(lookAheadCounter));
+                        state = -1;
+                        break;
+                    }
+                    if (currentLexeme.matches(Language.REGEX_LIT_REAL)) {
+                        detectedToken = Language.TOK_LIT_REAL;
                         detectedLexeme = currentLexeme;
                         // System.out.println(currentLexeme);
-                        break;
                     } else {
-                        if (Character.toString(programText.charAt(lookAheadCounter)).equals(LexicalAnalyzer.Language.REGEX_NEWLINE)) {
+                        if (Character.toString(programText.charAt(lookAheadCounter)).equals(Language.REGEX_NEWLINE)) {
                             // System.out.println("Next Line Started");
                             lineCounter++;
                         }
-                        if (currentLexeme.contains(LexicalAnalyzer.Language.REGEX_RS_RANGE)) {
+                        if (currentLexeme.contains(Language.REGEX_RS_RANGE)) {
                             resetStateAndStopSearching();
                             break;
                         }
@@ -672,9 +705,9 @@ public class Lexer {
                         // System.out.println("State Reset by ST_REAL - found a REAL");
                         programCounter = lookAheadCounter;
                         resetStateAndStopSearching();
-                        break;
                     }
-                    /**
+                    break;
+                /**
                      * rperiod
                      */
                 case LexicalAnalyzer.Language.ST_PERIOD :
@@ -695,6 +728,7 @@ public class Lexer {
                         resetStateAndStopSearching();
                         hasSymbols = false;
                         break;
+
                     }
                     // System.out.println(currentLexeme);
                     /**

@@ -3,13 +3,16 @@ as you are parsing them. Also, there must
 be appropriate error handling!}
 
 program example(input,output); {Apparently, program, input and output are reserved words}
+    pi:= 3.14159:real;
+    pillow:= 300;
+    pi:= 3.14159:real;
     var x,y:integer;
     n: array [1..20] of integer;
     hi:= 'Hello, World!':string;
     q:='q':char;
     result:=true:boolean;
     antiresult:=false:boolean;
-    pi:= 3.14%159:real;
+    pi:= 3.14159:real;
     arrayOfChars: array[1..5] of char;
     function gcd(a,b:integer):integer;
     begin{gcd}
@@ -18,7 +21,7 @@ program example(input,output); {Apparently, program, input and output are reserv
             if (a>0) then
                 a:=a+1;
             if (b<>-1) then
-                b:=a*2;
+                b:=a*2d;
             if (c>=0) then
                 c:=b-a;
             if (d<=1000) then
