@@ -1,7 +1,5 @@
 package LexicalAnalyzer;
 
-import org.xml.sax.ext.LexicalHandler;
-
 /**
  * Lexer
  *
