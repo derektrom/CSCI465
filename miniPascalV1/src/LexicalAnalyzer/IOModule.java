@@ -1,7 +1,5 @@
 package LexicalAnalyzer;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.File;
+import java.io.*;
 import java.util.List;
 import java.util.ArrayList;
 /**
@@ -81,12 +79,23 @@ public class IOModule {
 
     /**
      * Prints out the matches in the list
-     * generated from the program
+     * generated from the program to a txt
+     * file.
+     * @throws IOException
      */
-    public void printMatches() {
-        System.out.println();
-        for (Match m : matches) {
-            System.out.println(m);
+    public void printMatches() throws IOException{
+        try {
+            FileWriter writer = new FileWriter("output.txt");
+            for (Match m : matches) {
+                System.out.println(m);
+                writer.write(m.toString()+"\n");
+            }
+            writer.close();
+        } catch (IOException e){
+            System.err.println("There was a problem writing the file.");
+            System.err.println(e.getMessage());
+            System.exit(1);
         }
+
     }
 }
