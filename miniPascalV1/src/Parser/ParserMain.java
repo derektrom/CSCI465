@@ -15,7 +15,7 @@ import java.io.FileReader;
 public class ParserMain extends Driver {
     /**
      * This is the main function of the PareserMain class which starts execution
-     * of lexer package and extends the driver class
+     * of lexer package and extends the driver classant
      * @param args arguments from the command line for file input
      * @throws Exception IO Exception
      */
