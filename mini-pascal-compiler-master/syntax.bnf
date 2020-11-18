@@ -1,4 +1,4 @@
-start   : program
+start   : program./
 program : PROGRAM ID (ID,ID) SEMICOLON block PERIOD
 block   : constant-definition-part
           /*type-definition-part*/

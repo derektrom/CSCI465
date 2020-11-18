@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbed3840-65ba-4dbe-9f98-cb5a5523477a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniPascalV1/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astfp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/astfp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/syntax.bnf" beforeDir="false" afterPath="$PROJECT_DIR$/syntax.bnf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../miniPascalV1/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../miniPascalV1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../miniPascalV1/MiniPascal-version-I.pdf" beforeDir="false" />
@@ -107,7 +108,7 @@
       <updated>1605633647793</updated>
       <workItem from="1605633649750" duration="3382000" />
       <workItem from="1605665780335" duration="1458000" />
-      <workItem from="1605667307579" duration="836000" />
+      <workItem from="1605667307579" duration="2882000" />
     </task>
     <servers />
   </component>
@@ -115,26 +116,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="136" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605667214797">
+    <state x="188" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605668779428">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="136" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1605667214797" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1605667282536">
+    <state x="188" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1605668779428" />
+    <state x="320" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605668620685">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1605667282536" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1605667282534">
+    <state x="320" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1605668620685" />
+    <state x="478" y="159" key="EnvironmentVariablesDialog" timestamp="1605668757741">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1605667282534" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1605667282533">
+    <state x="478" y="159" key="EnvironmentVariablesDialog/0.0.1280.800@0.0.1280.800" timestamp="1605668757741" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1605668785901">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1605667282533" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1605667282535">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1605668785901" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1605668785900">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1605667282535" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1605668785900" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1605668785899">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1605668785899" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1605668785900">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1605668785900" />
     <state width="640" height="197" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1605666900574">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
