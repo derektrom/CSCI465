@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbed3840-65ba-4dbe-9f98-cb5a5523477a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniPascalV1/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/MiniPascal-version-I.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/build/LexicalAnalyzer/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/miniPascalV1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/miniPascalV1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/src/MiniPascal.g4" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/src/MiniPascal.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniPascalV1/validinput.pas" beforeDir="false" afterPath="$PROJECT_DIR$/../miniPascalV1/validinput.pas" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kQXAohxdLHi7zSrXkmXJUMncPd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Makefile.all">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./test/goodTest.pas" PASS_PARENT_ENVS_2="true" RUN_PATH="$PROJECT_DIR$/mini-pascal-compiler">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" nameIsGenerated="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="clean" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Makefile.Unnamed" />
+      <item itemvalue="Makefile.clean" />
+      <item itemvalue="Makefile.all" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile.all" />
+        <item itemvalue="Makefile.clean" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbed3840-65ba-4dbe-9f98-cb5a5523477a" name="Default Changelist" comment="" />
+      <created>1605633647793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605633647793</updated>
+      <workItem from="1605633649750" duration="3382000" />
+      <workItem from="1605665780335" duration="1458000" />
+      <workItem from="1605667307579" duration="836000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="136" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605667214797">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="136" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1605667214797" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1605667282536">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1605667282536" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1605667282534">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1605667282534" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1605667282533">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1605667282533" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1605667282535">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1605667282535" />
+    <state width="640" height="197" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1605666900574">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="640" height="197" key="ImportCMakeProjectWizard.bottomPanel/0.0.1280.800@0.0.1280.800" timestamp="1605666900574" />
+    <state width="640" height="461" key="ImportCMakeProjectWizard.topPanel" timestamp="1605666900573">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="640" height="461" key="ImportCMakeProjectWizard.topPanel/0.0.1280.800@0.0.1280.800" timestamp="1605666900573" />
+    <state x="317" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1605667342004">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="235" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1605667342004" />
+    <state x="565" y="164" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1605667077015">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="565" y="164" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.1280.800@0.0.1280.800" timestamp="1605667077015" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/icg.c</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
