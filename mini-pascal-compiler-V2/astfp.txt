@@ -1,0 +1,5 @@
+[program name:badtestprogram]
+	[var]
+		[id name:x]
+		[id name:y]
+		[id name:z]
